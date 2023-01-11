@@ -39,6 +39,27 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 }
+@font-face {
+  font-family: teka;
+  src: url(../assets/fonts/KHTeka-Regular.otf);
+}
+h1 {
+  font-weight: 400;
+  font-family: teka;
+}
+
+h2 {
+  font-weight: 400;
+  font-family: teka;
+}
+h3 {
+  font-weight: 400;
+  font-family: teka;
+}
+span {
+  font-weight: 400;
+  font-family: teka;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
