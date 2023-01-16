@@ -22,6 +22,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/App.js", "components/App.js", "pages/api/submitions.js", "pages/api/submitions.js", "components/PlaceList.js", "components/PlaceList.js", "components/Lottery.js", "components/Lottery.js", "components/FoodPlace.js", "components/FoodPlace.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/App.js", "components/App.js", "pages/api/submitions.js", "pages/api/submitions.js", "components/PlaceList.js", "components/PlaceList.js", "components/Lottery.js", "components/Lottery.js", "components/FoodPlace.js", "components/FoodPlace.js", "pages/index.js", "pages/index.js"],
   "exclude": ["node_modules"]
 }
