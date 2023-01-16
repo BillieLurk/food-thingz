@@ -36,7 +36,7 @@ const By = styled.h3`
 `;
 
 //make a function that takes in an int then returns a string with the same number of $ signs as the int
-const price = (price: number) => {
+const price = (price) => {
   let priceString = "";
   for (let i = 0; i < price; i++) {
     priceString += "$";
@@ -44,7 +44,7 @@ const price = (price: number) => {
   return priceString;
 };
 
-const FoodPlace = ({ foodPlace }: { foodPlace: any }) => {
+const FoodPlace = ({foodPlace}) => {
 
     
 

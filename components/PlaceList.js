@@ -164,13 +164,7 @@ const TextArea = styled.textarea`
   width: 100%;
 `;
 
-interface Props {
-  foodPlaces: any[];
-  setFoodPlaces: any;
-  setListPlaces: any;
-}
-
-const AddPlace: React.FC<Props> = ({
+const AddPlace = ({
   foodPlaces,
   setFoodPlaces: setFoodPlaces,
   setListPlaces: setListPlaces,
@@ -180,7 +174,7 @@ const AddPlace: React.FC<Props> = ({
   const { register, handleSubmit } = useForm();
   const [data, setData] = useState("");
 
-  const handleAdd = (data: any) => {
+  const handleAdd = (data) => {
     handleSubmit((data) => setData(JSON.stringify(data)));
 
     putData(data);
@@ -189,7 +183,7 @@ const AddPlace: React.FC<Props> = ({
     setAddMode(false);
   };
 
-  const handleRemove = (id: string) => {
+  const handleRemove = (id) => {
     removeData(id);
     setFoodPlaces(foodPlaces.filter((place) => place.id !== id));
 

@@ -83,12 +83,9 @@ const Title = styled.h1`
   margin-bottom: 30px;
 `
 
-interface Props {
-  foodPlaces: any[];
-  setEditMode: any;
-}
 
-const Lottery: React.FC<Props> = ({ foodPlaces, setEditMode }) => {
+
+const Lottery = ({ foodPlaces, setEditMode }) => {
   const [foodPlace, setFoodPlace] = useState();
 
   const randomFoodPlace = () => {
@@ -97,7 +94,7 @@ const Lottery: React.FC<Props> = ({ foodPlaces, setEditMode }) => {
   };
   return (
     <Container>
-      <Title>Let's Eat!</Title>
+      <Title>Lets Eat!</Title>
       <FoodPlaceContainer>
         {foodPlace != null && <FoodPlace foodPlace={foodPlace} />}
       </FoodPlaceContainer>
